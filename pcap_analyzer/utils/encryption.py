@@ -1,6 +1,7 @@
+import os
 from cryptography.fernet import Fernet
 
-ENCRYPTION_KEY = b'dFHILvc_xdB_-D5mjTR3QLPESnEcqK0e2GjXH_FC-jo='
+ENCRYPTION_KEY = os.getenv("ENCRYPTION_KEY").encode()
 
 def decrypt_api_key(encrypted_key: str) -> str:
     cipher = Fernet(ENCRYPTION_KEY)

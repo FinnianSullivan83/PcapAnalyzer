@@ -1,4 +1,7 @@
 venv/
-config.ini
 __pycache__/
+config.ini
 *.log
+*.pcap
+*.pcapng
+resources/GeoLite2-City.mmdb
